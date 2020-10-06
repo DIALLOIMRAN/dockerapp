@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Houdane Consulting | Digireporting</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://unicons.iconscout.com/release/v3.0.0/script/monochrome/bundle.js"/></script>
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div id="Dashboard">
+      <div class="container-fluid">
+        <div class="row">
+
+          <!-- MOBILE HEADER -->
+          <div class="Mobile-Header">
+
+            <!-- LEFT SIDE -->
+            <div class="LeftSide">
+              <div class="ToggleMenu">
+                <button type="button" class="ToggleMenu-BTN"><i class="uil uil-subject"></i></button>
+              </div>
+            </div>
+
+            <!-- CENTER SIDE -->
+            <div class="CenterSide">
+              <div class="DigiReporing-BrandResponsive">
+                <img src="assets/media/brand/DigiReporting-Brand.svg" alt="">
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="RightSide">
+              <div class="ToggleUser">
+                <button type="button" class="ToggleUser-BTN"><div class="UserBox-Thumb"></div></button>
+              </div>
+              <div class="ToggleAlerts">
+                <button type="button" class="ToggleAlerts-BTN"><i class="uil uil-bell"></i></button>
+              </div>
+            </div>
+
+            <div class="Search-Box">
+              <form class="Search-Form" method="post">
+                <input type="search" name="" value="" placeholder="Search...">
+                <button type="submit" name="button"><i class="uil uil-search"></i></button>
+              </form>
+            </div>
+          </div>
+
+
+          <!-- LEFT SIDE -->
+          <div class="Menu-Side fixed-left">
+            <div class="DigiReporing-LOGO">
+              <img src="assets/media/brand/DigiReprting-BrandTEXT.svg" alt="">
+            </div>
+
+            <div class="Projects-List">
+              <div class="dropdown show">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#"><div class="Project-Thumb"></div><span class="Project-Name">Projet 1</span></a>
+                  <a class="dropdown-item" href="#"><div class="Project-Thumb"></div><span class="Project-Name">Projet 2</span></a>
+                  <a class="dropdown-item" href="#"><div class="Project-Thumb"></div><span class="Project-Name">Projet 3</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="DigiReporting-Menu">
+              <div class="DigiReporting-Menu-Item"><a class="Menu-Link" href="dashboard.html"><i class="uil uil-dashboard"></i> <span>Dashboard</span></a></div>
+              <div class="DigiReporting-Menu-Item"><a class="Menu-Link" href="startups.html"><i class="uil uil-rocket"></i> <span>Startups</span></a></div>
+              <div class="DigiReporting-Menu-Item"><a class="Menu-Link" href="consultants.html"><i class="uil uil-user-md"></i> <span>Consultants</span></a></div>
+              <div class="DigiReporting-Menu-Item"><a class="Menu-Link" href="managers.html"><i class="uil uil-briefcase-alt"></i> <span>Pilotes / Bailleurs</span></a></div>
+              <div class="DigiReporting-Menu-Item"><a class="Menu-Link" href="settings.html"><i class="uil uil-edit-alt"></i> <span>Édition</span></a></div>
+            </div>
+          </div>
+          <!-- END LEFT SIDE -->
+
+          <!-- CONTENT SIDE -->
+          <div class="Content-Side">
+            <!-- CONTENT SIDE -->
+            <div class="HeaderTop">
+              <div class="HeaderLeft-Side">
+                <div class="Search-Box">
+                  <form class="Search-Form" method="post">
+                    <input type="search" name="" value="" placeholder="Search...">
+                    <button type="submit" name="button"><i class="uil uil-search"></i></button>
+                  </form>
+                </div>
+              </div>
+              <div class="HeaderRight-Side">
+                <div class="UserBox" data-toggle="tooltip" data-placement="bottom" title="Profile">
+                  <a href="me.html">
+                    <div class="UserBox-Infos">
+                      <label>Youness EL BEZZAZI</label>
+                      <span>Bailleur / Pilote</span>
+                    </div>
+                    <div class="UserBox-Thumb"></div>
+                  </a>
+                </div>
+                <div class="AlertBox">
+                  <button class="AlertBox-BTN" type="button" name="button" data-toggle="tooltip" data-placement="bottom" title="Notifications"><i class="uil uil-bell"></i></button>
+                  <div class="NotificationsContainer">
+                    <div class="NotificationsContent-BOX">
+                      <h4>Notifications</h4>
+                      <div class="NotificationsItems">
+                        <div class="NotificationItem">
+                          <div class="NotificationItem-Thumb"></div>
+                          <div class="NotificationItem-Content">
+                            <span class="NotificationItem-Text">Notifcation text goes here...</span>
+                            <span class="NotificationItem-Time">5 min ago</span>
+                          </div>
+                        </div>
+                        <div class="NotificationItem">
+                          <div class="NotificationItem-Thumb"></div>
+                          <div class="NotificationItem-Content">
+                            <span class="NotificationItem-Text">Notifcation text goes here...</span>
+                            <span class="NotificationItem-Time">5 min ago</span>
+                          </div>
+                        </div>
+                        <div class="NotificationItem">
+                          <div class="NotificationItem-Thumb"></div>
+                          <div class="NotificationItem-Content">
+                            <span class="NotificationItem-Text">Notifcation text goes here...</span>
+                            <span class="NotificationItem-Time">5 min ago</span>
+                          </div>
+                        </div>
+                        <div class="NotificationItem">
+                          <div class="NotificationItem-Thumb"></div>
+                          <div class="NotificationItem-Content">
+                            <span class="NotificationItem-Text">Notifcation text goes here...</span>
+                            <span class="NotificationItem-Time">5 min ago</span>
+                          </div>
+                        </div>
+                        <div class="NotificationItem">
+                          <div class="NotificationItem-Thumb"></div>
+                          <div class="NotificationItem-Content">
+                            <span class="NotificationItem-Text">Notifcation text goes here...</span>
+                            <span class="NotificationItem-Time">5 min ago</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="DetailsPage-Container">
+                <div class="DetailsPage-Cover" style="background-image: url('assets/media/images/startup-cover.jpg');">
+                  <div class="StartUPInfos-Header">
+                    <div id="imageProfile" class="StartUPInfos-Thumb"><span>HC</span></div>
+                    <div class="StartUPInfos-Name">Houdane Consulting</div>
+                    <div class="StartUPInfos-Identiant">@IdentifiantUnique</div>
+                  </div>
+                </div>
+                <div class="DetailsPage-Content">
+                  <div class="DetailsPage-Desc">
+                    <h3>Heading Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  </div>
+                  <div class="DetailsPage-Statistics">
+                    <div class="DetailsPage-StatisticsBOX RedBOX">
+                      <div class="StatisticsBOX-Content">
+                        <i class="uil uil-shopping-bag"></i>
+                        <span class="StatisticsBOX-Numbers">$17 000</span>
+                        <label class="StatisticsBOX-Label">Achats</label>
+                      </div>
+                    </div>
+                    <div class="DetailsPage-StatisticsBOX GreenBOX">
+                      <div class="StatisticsBOX-Content">
+                        <i class="uil uil-tag"></i>
+                        <span class="StatisticsBOX-Numbers">$20 000</span>
+                        <label class="StatisticsBOX-Label">Ventes</label>
+                      </div>
+                    </div>
+                    <div class="DetailsPage-StatisticsBOX BlueBOX">
+                      <div class="StatisticsBOX-Content">
+                        <i class="uil uil-parcel"></i>
+                        <span class="StatisticsBOX-Numbers">15</span>
+                        <label class="StatisticsBOX-Label">Biens</label>
+                      </div>
+                    </div>
+                    <div class="DetailsPage-StatisticsBOX OrangeBOX">
+                      <div class="StatisticsBOX-Content">
+                        <i class="uil uil-exchange-alt"></i>
+                        <span class="StatisticsBOX-Numbers">25</span>
+                        <label class="StatisticsBOX-Label">Opérations</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="StartUPChartBOX">
+                    <div class="FilterForm">
+                      <div class="FilterRow">
+
+                        <!-- START INPUT ROW -->
+                        <div class="Input-Row Input-Select">
+                          <select class="SelectFilter LightedColor" name="">
+                            <option disabled>Chiffre d’affaires</option>
+                            <option value="" selected>Mars 2019</option>
+                            <option value="">Avril 2019</option>
+                            <option value="">Mai 2019</option>
+                          </select>
+                        </div>
+                        <!-- END INPUT ROW -->
+                      </div>
+                    </div>
+                    <canvas id="StartUPChartBOX-Lines" height="40vh" width="100vw"></canvas>
+                  </div>
+
+                  <div class="StartUP-BOXES">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="ReportBOX Participations">
+                          <div class="ReportBOX-Header"><h4 class="ReportBOX-HeaderTitle"><i class="uil uil-presentation"></i> Participation aux ateliers</h4></div>
+                          <ul class="ReportBOX-List">
+                            <li class="ReportBOX-ListItem Completed">
+                              <label class="ParticipationLabel">Marketing</label>
+                              <div class="ParticipationNumbers"><span>2/2</span></div>
+                            </li>
+                            <li class="ReportBOX-ListItem Completed">
+                              <label class="ParticipationLabel">Commercial</label>
+                              <div class="ParticipationNumbers"><span>3/3</span></div>
+                            </li>
+                            <li class="ReportBOX-ListItem NotCompleted">
+                              <label class="ParticipationLabel">Comptabilité</label>
+                              <div class="ParticipationNumbers"><span>1/4</span></div>
+                            </li>
+                            <li class="ReportBOX-ListItem NotCompleted">
+                              <label class="ParticipationLabel">Management</label>
+                              <div class="ParticipationNumbers"><span>0/4</span></div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-md-6">
+                        <div class="TeamBOX">
+                          <div class="TeamBOX-Header">
+                            <h4 class="TeamBOX-HeaderTitle"><i class="uil uil-users-alt"></i> Team</h4>
+                            <button type="button" name="button" class="MembersList" data-toggle="modal" data-target="#ModalMembers">All Memebers</button>
+                          </div>
+                          <ul class="TeamBOX-List">
+                            <li class="TeamBOX-ListItem">
+                              <div class="TeamBOX-MemberAvatar"></div>
+                              <div class="TeamBOX-MemberDetails">
+                                <div class="MemberDetails-Name">Youness ELBEZZAZI</div>
+                                <span class="MemberDetails-Email">youness@digireporting.com</span>
+                                <span class="MemberDetails-Function">Designer</span>
+                              </div>
+                            </li>
+                            <li class="TeamBOX-ListItem">
+                              <div class="TeamBOX-MemberAvatar"></div>
+                              <div class="TeamBOX-MemberDetails">
+                                <div class="MemberDetails-Name">Youness ELBEZZAZI</div>
+                                <span class="MemberDetails-Email">youness@digireporting.com</span>
+                                <span class="MemberDetails-Function">Designer</span>
+                              </div>
+                            </li>
+                            <li class="TeamBOX-ListItem">
+                              <div class="TeamBOX-MemberAvatar"></div>
+                              <div class="TeamBOX-MemberDetails">
+                                <div class="MemberDetails-Name">Youness ELBEZZAZI</div>
+                                <span class="MemberDetails-Email">youness@digireporting.com</span>
+                                <span class="MemberDetails-Function">Designer</span>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="DetailsPage-Sidebar">
+                <div class="StartUPInfos-Header">
+                  <div id="imageProfile" class="StartUPInfos-Thumb"><span>HC</span></div>
+                  <div class="StartUPInfos-Name">Houdane Consulting</div>
+                  <div class="StartUPInfos-Identiant">@IdentifiantUnique</div>
+                </div>
+                <div class="StartUPInfos-Body">
+                  <ul class="StartUPInfos-List">
+                    <li class="StartUPInfos-Item">
+                      <div class="StartUPInfos-ItemIcon"><i class="uil uil-cog"></i></div>
+                      <div class="StartUPInfos-ItemContent">
+                        <label class="StartUPInfos-ItemLabel">Activité</label>
+                        <span class="StartUPInfos-ItemValue">Langues</span>
+                      </div>
+                    </li>
+                    <li class="StartUPInfos-Item">
+                      <div class="StartUPInfos-ItemIcon"><i class="uil uil-crosshair-alt"></i></div>
+                      <div class="StartUPInfos-ItemContent">
+                        <label class="StartUPInfos-ItemLabel">Secteur d’activité</label>
+                        <span class="StartUPInfos-ItemValue">Education </span>
+                      </div>
+                    </li>
+                    <li class="StartUPInfos-Item">
+                      <div class="StartUPInfos-ItemIcon"><i class="uil uil-map-marker"></i></div>
+                      <div class="StartUPInfos-ItemContent">
+                        <label class="StartUPInfos-ItemLabel">Lieu de création</label>
+                        <span class="StartUPInfos-ItemValue">Casablanca</span>
+                      </div>
+                    </li>
+                    <li class="StartUPInfos-Item">
+                      <div class="StartUPInfos-ItemIcon"><i class="uil uil-calendar-alt"></i></div>
+                      <div class="StartUPInfos-ItemContent">
+                        <label class="StartUPInfos-ItemLabel">Date de création</label>
+                        <span class="StartUPInfos-ItemValue">2020</span>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <ul class="StartUPInfos-Contact">
+                    <h4>Contacts</h4>
+                    <li class="StartUPInfos-ContactItem"><i class="uil uil-globe"></i> <a href="https://houdaneconsulting.ma">https://houdaneconsulting.ma</a></li>
+                    <li class="StartUPInfos-ContactItem"><i class="uil uil-envelope"></i> <a href="mailto:contact@fundcorp.ma">contact@fundcorp.ma</a></li>
+                    <li class="StartUPInfos-ContactItem GrayLink"><i class="uil uil-phone-alt"></i> <a href="tel:06 79 76 23 98">06 79 76 23 98</a></li>
+                    <li class="StartUPInfos-ContactItem GrayLink"><i class="uil uil-facebook-f"></i> <a href="#!">facebook.com/HoudaneConsulting</a></li>
+                    <li class="StartUPInfos-ContactItem GrayLink"><i class="uil uil-twitter"></i> <a href="#!">twitter.com/HoudaneConsulting</a></li>
+                  </ul>
+                </div>
+
+                <div class="StartUPInfos-Footer">
+                  <label>Infos légales</label><span>RC: 20000 - IF 900000</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- END CONTENT SIDE -->
+
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="ModalMembers" tabindex="-1" role="dialog" aria-labelledby="ModalMembersTitle" aria-hidden="true">
+      <div class="ModalUsers-Dialog modal-dialog modal-dialog-centered" role="document">
+        <div class="ModalUsers-Content modal-content">
+
+          <div class="modal-body">
+            <div class="ModelUsers-Header">
+              <h4>Members</h4>
+            </div>
+            <div class="MembersList-Container">
+              <div class="MembersList-Header">
+                <span class="MembersList-HeaderName">Name</span>
+                <span class="MembersList-HeaderSecteur">Role</span>
+                <span class="MembersList-HeaderEmail">Email Address</span>
+                <span class="MembersList-HeaderPhone">Phone</span>
+              </div>
+              <div class="MembersList-Items">
+                <span class="MembersList-RowUserInfo">
+                  <span class="MembersList-RowUserInfoThumb"></span>
+                  <span class="MembersList-RowUserInfoName">Youness EL BEZZAZI</span>
+                </span>
+                <span class="MembersList-RowUserSecteur">Designer </span>
+                <span class="MembersList-RowUserEmail">youness.elbezzazi@gmail.com <a href="mailto:contact@fundcorp.ma" data-toggle="tooltip" data-placement="bottom" title="Send an email"><i class="uil uil-envelope"></i></a></span>
+                <span class="MembersList-RowUserPhone">06 79 76 23 98 <a href="tel:06 79 76 23 98" data-toggle="tooltip" data-placement="bottom" title="Call"><i class="uil uil-phone-alt"></i></a></span>
+              </div>
+              <div class="MembersList-Items">
+                <span class="MembersList-RowUserInfo">
+                  <span class="MembersList-RowUserInfoThumb"></span>
+                  <span class="MembersList-RowUserInfoName">Youness EL BEZZAZI</span>
+                </span>
+                <span class="MembersList-RowUserSecteur">Designer </span>
+                <span class="MembersList-RowUserEmail">youness.elbezzazi@gmail.com <a href="mailto:contact@fundcorp.ma" data-toggle="tooltip" data-placement="bottom" title="Send an email"><i class="uil uil-envelope"></i></a></span>
+                <span class="MembersList-RowUserPhone">06 79 76 23 98 <a href="tel:06 79 76 23 98" data-toggle="tooltip" data-placement="bottom" title="Call"><i class="uil uil-phone-alt"></i></a></span>
+              </div>
+              <div class="MembersList-Items">
+                <span class="MembersList-RowUserInfo">
+                  <span class="MembersList-RowUserInfoThumb"></span>
+                  <span class="MembersList-RowUserInfoName">Youness EL BEZZAZI</span>
+                </span>
+                <span class="MembersList-RowUserSecteur">Designer </span>
+                <span class="MembersList-RowUserEmail">youness.elbezzazi@gmail.com <a href="mailto:contact@fundcorp.ma" data-toggle="tooltip" data-placement="bottom" title="Send an email"><i class="uil uil-envelope"></i></a></span>
+                <span class="MembersList-RowUserPhone">06 79 76 23 98 <a href="tel:06 79 76 23 98" data-toggle="tooltip" data-placement="bottom" title="Call"><i class="uil uil-phone-alt"></i></a></span>
+              </div>
+              <div class="MembersList-Items">
+                <span class="MembersList-RowUserInfo">
+                  <span class="MembersList-RowUserInfoThumb"></span>
+                  <span class="MembersList-RowUserInfoName">Youness EL BEZZAZI</span>
+                </span>
+                <span class="MembersList-RowUserSecteur">Designer </span>
+                <span class="MembersList-RowUserEmail">youness.elbezzazi@gmail.com <a href="mailto:contact@fundcorp.ma" data-toggle="tooltip" data-placement="bottom" title="Send an email"><i class="uil uil-envelope"></i></a></span>
+                <span class="MembersList-RowUserPhone">06 79 76 23 98 <a href="tel:06 79 76 23 98" data-toggle="tooltip" data-placement="bottom" title="Call"><i class="uil uil-phone-alt"></i></a></span>
+              </div>
+              <div class="MembersList-Items">
+                <span class="MembersList-RowUserInfo">
+                  <span class="MembersList-RowUserInfoThumb"></span>
+                  <span class="MembersList-RowUserInfoName">Youness EL BEZZAZI</span>
+                </span>
+                <span class="MembersList-RowUserSecteur">Role </span>
+                <span class="MembersList-RowUserEmail">youness.elbezzazi@gmail.com <a href="mailto:contact@fundcorp.ma" data-toggle="tooltip" data-placement="bottom" title="Send an email"><i class="uil uil-envelope"></i></a></span>
+                <span class="MembersList-RowUserPhone">06 79 76 23 98 <a href="tel:06 79 76 23 98" data-toggle="tooltip" data-placement="bottom" title="Call"><i class="uil uil-phone-alt"></i></a></span>
+              </div>
+              <button type="button" class="Close-BTN btn btn-secondary" data-dismiss="modal"><i class="uil uil-multiply"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script type="text/javascript">
+
+      var ctx = document.getElementById('StartUPChartBOX-Lines');
+      var myChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple'],
+          datasets: [{
+              label: '# of Votes',
+              data: [12, 3, 5, 2, 3],
+              backgroundColor: 'transparent',
+              borderColor: 'rgb(106, 12, 172)',
+              borderWidth: 3
+          }]
+        },
+        options: {
+          responsive: true,
+  				legend: {
+            display: false,
+  					// position: 'bottom',
+  				},
+  				hover: {
+  					mode: 'index'
+  				},
+          scales: {
+              yAxes: [{
+                  ticks: {
+                      beginAtZero: true
+                  }
+              }]
+          }
+        }
+      });
+    </script>
+
+  </body>
+
+</html>
