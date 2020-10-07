@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Yang consulting | Digireporting</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://unicons.iconscout.com/release/v3.0.0/script/monochrome/bundle.js"/></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="assets/js/scripts.js"></script>
+
+    <script type="text/javascript">
+
+      var ctx = document.getElementById('chart-area');
+      var myChart = new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: ['Restauration', 'Transport', 'Carburant', 'Internet'],
+          datasets: [{
+              // label: '# of Votes',
+              data: [50, 30, 20, 10],
+              backgroundColor: [
+                'rgba(85, 55, 102, 1)',
+                'rgba(231, 53, 125, 1)',
+                'rgba(236, 105, 41, 1)',
+                'rgba(247, 169, 49, 1)'
+              ]
+              // borderColor: 'rgb(106, 12, 172)',
+              // borderWidth: 3
+          }]
+        },
+        options: {
+          responsive: true,
+  				legend: {
+            display: true,
+            position: 'left',
+            usePointStyle: true,
+            labels: {
+                boxWidth: 12,
+                padding: 12,
+            }
+  					// position: 'bottom',
+  				},
+  				hover: {
+  					mode: 'index'
+  				},
+          // scales: {
+          //     yAxes: [{
+          //         ticks: {
+          //             beginAtZero: true
+          //         }
+          //     }]
+          // }
+        }
+      });
+    </script>
+  </body>
+</html>
